@@ -12,14 +12,14 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white text-gray-800 shadow-md py-3 px-6 flex flex-wrap items-center justify-between">
-      {/* Logo */}
-      <div className="flex items-center gap-2">
+      {/* Logo (clickable to home) */}
+      <Link to="/" className="flex items-center gap-2">
         <img src="public/logo.png" alt="TaskonFly Logo" className="h-8 w-8" />
         <span className="text-xl font-extrabold tracking-wide whitespace-nowrap">
           <span className="text-black">Task</span>
           <span className="text-[#FFAC1C]">onFly</span>
         </span>
-      </div>
+      </Link>
 
       {/* Desktop nav links */}
       <div className="hidden md:flex gap-3 text-sm font-medium">
@@ -52,7 +52,7 @@ export default function Navbar() {
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
-          className="md:hidden flex items-center px-3 py-2  text-gray-700 hover:text-[#FFAC1C] hover:border-[#FFAC1C] transition"
+          className="md:hidden flex items-center px-3 py-2 text-gray-700 hover:text-[#FFAC1C] hover:border-[#FFAC1C] transition"
         >
           <svg
             className="fill-current h-5 w-5"
