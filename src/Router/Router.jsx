@@ -9,6 +9,8 @@ import Services from "../Pages/Services/Services";
 import Coverage from "../Pages/Coverage/Coverage";
 import About from "../Pages/About Us/About";
 import Rider from "../Pages/Rider/Rider";
+import Signin from "../Pages/Sign In/SignIn";
+import Signup from "../Pages/Sign Up/SignUp";
 
 
 export const router = createBrowserRouter([
@@ -42,6 +44,14 @@ export const router = createBrowserRouter([
         {
           path: "be-a-rider",
           Component: Rider,          
+        },
+        {
+          path: "signin",
+          Component: Signin,
+        },
+        {
+          path: "signup",
+          Component: Signup,
         }
       ]
     },
