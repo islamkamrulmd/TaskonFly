@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
 const images = [
-  "public/Banner01.png",
-  "public/Banner02.png",
-  "public/Banner03.png"
+  "public/Banners/Banner01.png",
+  "public/Banners/Banner02.png",
+  "public/Banners/Banner03.png",
 ];
 
 export default function Banner() {
