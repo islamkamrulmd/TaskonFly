@@ -11,7 +11,7 @@ export default function Navbar() {
     }`;
 
   return (
-    <nav className="bg-white text-gray-800 shadow-md py-3 px-6 flex flex-wrap items-center justify-between">
+    <nav className="fixed top-4 left-4 right-4 z-50 bg-white text-gray-800 shadow-lg rounded-xl px-6 py-3 flex flex-wrap items-center justify-between">
       {/* Logo (clickable to home) */}
       <Link to="/" className="flex items-center gap-2">
         <img src="public/logo.png" alt="TaskonFly Logo" className="h-8 w-8" />
@@ -30,7 +30,7 @@ export default function Navbar() {
         <Link to="/be-a-rider" className={linkClasses("/be-a-rider")}>Be a Rider</Link>
       </div>
 
-      {/* Auth buttons + Hamburger menu */}
+      {/* Auth buttons + Hamburger */}
       <div className="flex items-center gap-3">
         {/* Desktop auth buttons */}
         <div className="hidden md:flex gap-3">
@@ -52,7 +52,7 @@ export default function Navbar() {
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
-          className="md:hidden flex items-center px-3 py-2 text-gray-700 hover:text-[#FFAC1C] hover:border-[#FFAC1C] transition"
+          className="md:hidden flex items-center px-3 py-2 text-gray-700 hover:text-[#FFAC1C] transition"
         >
           <svg
             className="fill-current h-5 w-5"
@@ -72,44 +72,14 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu dropdown */}
+      {/* Mobile dropdown */}
       {menuOpen && (
         <div className="w-full mt-3 md:hidden flex flex-col gap-2 border-t border-gray-200 pt-3">
-          <Link
-            to="/pricing"
-            className={linkClasses("/pricing")}
-            onClick={() => setMenuOpen(false)}
-          >
-            Pricing
-          </Link>
-          <Link
-            to="/services"
-            className={linkClasses("/services")}
-            onClick={() => setMenuOpen(false)}
-          >
-            Services
-          </Link>
-          <Link
-            to="/coverage"
-            className={linkClasses("/coverage")}
-            onClick={() => setMenuOpen(false)}
-          >
-            Coverage
-          </Link>
-          <Link
-            to="/about"
-            className={linkClasses("/about")}
-            onClick={() => setMenuOpen(false)}
-          >
-            About Us
-          </Link>
-          <Link
-            to="/be-a-rider"
-            className={linkClasses("/be-a-rider")}
-            onClick={() => setMenuOpen(false)}
-          >
-            Be a Rider
-          </Link>
+          <Link to="/pricing" className={linkClasses("/pricing")} onClick={() => setMenuOpen(false)}>Pricing</Link>
+          <Link to="/services" className={linkClasses("/services")} onClick={() => setMenuOpen(false)}>Services</Link>
+          <Link to="/coverage" className={linkClasses("/coverage")} onClick={() => setMenuOpen(false)}>Coverage</Link>
+          <Link to="/about" className={linkClasses("/about")} onClick={() => setMenuOpen(false)}>About Us</Link>
+          <Link to="/be-a-rider" className={linkClasses("/be-a-rider")} onClick={() => setMenuOpen(false)}>Be a Rider</Link>
 
           <div className="flex gap-3 mt-2 px-1">
             <Link
