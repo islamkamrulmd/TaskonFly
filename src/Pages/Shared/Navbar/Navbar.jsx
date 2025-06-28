@@ -14,7 +14,7 @@ export default function Navbar() {
     <nav className="fixed top-4 left-4 right-4 z-50 bg-white text-gray-800 shadow-lg rounded-xl px-6 py-3 flex flex-wrap items-center justify-between">
       {/* Logo (clickable to home) */}
       <Link to="/" className="flex items-center gap-2">
-        <img src="public/logo.png" alt="TaskonFly Logo" className="h-8 w-8" />
+        <img src="public/Logo/logo.png" alt="TaskonFly Logo" className="h-8 w-8" />
         <span className="text-xl font-extrabold tracking-wide whitespace-nowrap">
           <span className="text-black">Task</span>
           <span className="text-[#FFAC1C]">onFly</span>

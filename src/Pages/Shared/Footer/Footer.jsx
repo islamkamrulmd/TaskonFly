@@ -9,7 +9,7 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div className="flex items-center gap-2 mb-2">
-            <img src="public/logo.png" alt="TaskonFly Logo" className="h-8 w-8" />
+            <img src="public/Logo/logo.png" alt="TaskonFly Logo" className="h-8 w-8" />
             <span className="text-xl font-extrabold tracking-wide">
               <span className="text-black">Task</span>
               <span className="text-[#FFAC1C]">onFly</span>
