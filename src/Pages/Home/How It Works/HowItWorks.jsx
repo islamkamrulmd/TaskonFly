@@ -27,7 +27,7 @@ export default function HowItWorks() {
     ];
   
     return (
-      <section className="max-w-7xl mx-auto px-4 py-14">
+      <section className="max-w-7xl mx-auto px-4 pt-10">
         <h2 className="text-3xl font-bold text-center mb-10 text-white">How It Works</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {steps.map((step, index) => (
